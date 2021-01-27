@@ -1,7 +1,9 @@
 #include<stdio.h> 
+#define MAX 100
 int main(){ 
-	int tab[100]; 
-	int i, j, N, val; 
+	//const int MAX = 100;
+	int tab[MAX]; 
+	int i, j, N, val, trouve; 
 	
 	/* ****************************** la saisie des données*************************** */ printf ("tapez le nombre d’elements \n"); 
 	scanf("%d", &N); 
@@ -11,23 +13,22 @@ int main(){
 		scanf("%d", &tab[i]);
 	} 
 	
+	val = 5;
+	trouve = 0;
 	/* ************************************* Traitement ********************************* */ 
-	for ( i = 1; i < N; i ++) { 
-		// insérer la valeur tab[i] dans le sous tableau gauche
-		val= tab[i]; // conserver la valeur 
-		
-		// décaler à droite toutes les valeurs > val ****  j=i-1; 
-		while ((j>=0) &&(tab[j]> val)){ 
-			tab[j+1]=tab[j] ; 
-			j-- ; // avancer 
-		} 
-		
-		tab[j+1]=val; // insérer la valeur à la position convenable 
+	for ( i = 0; i < N; i++) { 
+		if(tab[i] == val){
+			trouve = 1;
+			break;
+		}
+			
 	} 
 	
 	/* **************** affichage du tableau après le traitement ************** */ 
-	for ( i = 0; i< N; i++) 
-		printf ("%d ", tab[i ]); 
+	if(trouve) 
+		printf("Exist"); 
+	else
+		printf("N'Exist pas");
 	return 0; 
 }
 
