@@ -4,30 +4,29 @@
 main(){ 
 	float a,b,d;
 	char c;
-	
-	
-	printf("Saisir une opération arithmétique (+, -, *, /) : ");
+	printf("Saisir une operation arithmetique (+, -, *, /) : ");
 	scanf("%c", &c);
+	
 	printf("Saisir deux nombres : ");
 	scanf("%f%f", &a, &b);
 	
 	if(c == '+'){
 		d = a+b;
-		printf("%f+%f=%f.", a, b, d);
+		printf("%.2f+%.2f=%.2f.", a, b, d);
 	}else if(c == '-'){
 		d = a-b;
-		printf("%f-%f=%f.", a, b, d);
+		printf("%.2f-%.2f=%.2f.", a, b, d);
 	}else if(c == '*'){
 		d = a*b;
-		printf("%f*%f=%f.", a, b, d);
+		printf("%.2f*%.2f=%.2f.", a, b, d);
 	}else if(c == '/'){
 		if (b != 0){
 			d = a/b;
-			printf("%f/%f=%f.", a, b, d);
+			printf("%.2f/%.2f=%.2f.", a, b, d);
 		}else
 			printf("Erreur");
 	}else 
-		printf("opération invalide");
+		printf("operation invalide");
 		
     getch();
 }
@@ -42,25 +41,26 @@ Début
     Lire (a,b)
     Écrire ("Saisir une opération arithmétique (+, -, *, /) ")
     Lire (c)
+    
 	Si (c = ’+’) alors
 	    d <-- a+b
-	    Écrire (a,"+ ",b,"=",a+b, d)
+	    Écrire (a,"+ ",b,"=", d)
 	Sinon Si (c = ’-’)  alors
              d <-- a-b
-             Écrire (a,"-",b,"=",a-b,d)
+             Écrire (a,"-",b,"=", d)
           Sinon Si (c=’*’)  alors
                    d <-- a*b
-                   Écrire (a,"*",b,"=",a*b,d)
-                Sinon Si (c = ’/’ )  alors
-             			  Si (b <> 0) alors
+                   Écrire (a,"*",b,"=", d)
+                Sinon  Si (c = ’/’ )  alors
+             			   Si (b <> 0) alors
                               d <-- a/b
-                              Écrire (a, "/",b,"=",a/b,d)
+                              Écrire (a, "/",b,"=", d)
                            Sinon
                               Écrire ("Erreur")
                            finsi
                         Sinon
                            Écrire ("opération invalide")
-	                   finsi 
+	                    si 
 	            finsi 
 	      finsi
 	Finsi

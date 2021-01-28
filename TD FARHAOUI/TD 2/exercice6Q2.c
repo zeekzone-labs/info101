@@ -5,8 +5,10 @@ main()
 { 
 	float note;
 
-	printf("Veuillez saisir VOTRE NOTE:\n");
-	scanf("%f", &note);
+	do{// Pour s'assurer que 0 <= note <= 20
+		printf("Veuillez saisir VOTRE NOTE:\n");
+		scanf("%f", &note);
+	}while(note <  0 || note > 20);
 	
 	if(note < 7)
 		printf("Non valide\n");
@@ -22,6 +24,7 @@ main()
 		printf("Tres bien\n");
 	else 
 		printf("Excellent\n");
+		
     getch();
 }
 
@@ -33,20 +36,20 @@ DEBUT
 	Ecrire("Veuillez saisir VOTRE NOTE:");
 	Lire(note);
 	
-	Si (note < 7)
+	Si (note >= 0 Et note < 7) ALORS    
 		Ecrire("Non valide")
-	Sinon Si(note < 10)
-		  	Ecrire("Rattrapage")
-	      Sinon Si(note < 12)
-		        Ecrire("Passable")
-		     Sinon Si(note < 14)
-		             Ecrire("Assez bien")
-	              Sinon Si(note < 16)
-		                   Ecrire("Bien")
-	                    Sinon Si(note < 18)
-					  	        Ecrire("Tres bien")
-				              Sinon
-				      	        Ecrire("Tres bien avec felicitations")
+	Sinon Si(note < 10) ALORS  
+		  	 Ecrire("Rattrapage")
+	      Sinon Si(note < 12) ALORS 
+		           Ecrire("Passable")
+		     Sinon Si( note < 14) ALORS  
+		               Ecrire("Assez bien")
+	              Sinon Si(note < 16) ALORS
+		                      Ecrire("Bien")
+	                    Sinon Si(note < 18) ALORS
+					  	         Ecrire("Tres bien")
+				              Sinon 
+				      	          Ecrire("Tres bien avec felicitations")
 			                  FinSi
 				        FinSi
 		          FinSi

@@ -5,27 +5,32 @@ main()
 { 
 	float note;
 	
-	printf("Saisir un entier x: ");
-    scanf("%f", &note);
+	do{// Pour s'assurer que 0 <= note <= 20
+		printf("Saisir une note entre 0 et 20: ");
+    	scanf("%f", &note);
+	}while(note <  0 || note > 20);
+	
 	
 	if(note >= 10)
-		printf("réussi");
+		printf("reussi");
 	else
-		printf("pas réussi");
+		printf("pas reussi");
 	
     getch();
 }
 
 
 /*Algorithme Q6
-Variable note : reel
+	Variable note : reel
 Début
     Écrire ("Saisir une note ")
     Lire (note)
+    
 	Si (note >= 10)  alors
 	    Écrire ("réussi")
 	Sinon
 	    Écrire ("pas réussi")
 	Finsi
+	
 FIN
 */

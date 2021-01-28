@@ -3,7 +3,7 @@ main() {
     char sexe;
     int age;
 
-    printf("Entrez le sexe (M/F) : ");
+    printf("Entrez le sexe (M: Masculine/F: Feminine)  : ");
     scanf("%c", &sexe);
     printf("Entrez l’age: ");
     scanf("%d", &age);
@@ -18,7 +18,7 @@ Algorithme population
 	Variables sexe : caractère
 	age : entier
 Début
-	écrire ("Entrez le sexe (M/F) : ")
+	écrire ("Entrez le sexe (M: Masculine/F: Feminine) : ")
 	lire (sexe)
 	écrire ("Entrez l’age: ")
 	lire (age)
