@@ -1,9 +1,11 @@
 # include<stdio.h>
+#define L 100
+#define C 100
 int main(){ 
-	int m[20][20];
+	int m[L][C]; // Declaration statique/   type  identificateur[L][C];
 	int i, j, k, N, tmp ;
 	/* **************************************** la saisie des données************************************ */
-	printf ("tapez la dimension \n");
+	printf ("tapez la dimension < 20: \n");
 	scanf("%d", &N);
 	
 	printf ("tapez les elements \n");
