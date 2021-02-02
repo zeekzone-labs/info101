@@ -23,7 +23,7 @@ main(){
 	}while(i<=n);
 }
 /*
-Algorithme affichageDixFois_Avec_POUR
+Algorithme affichageDixFois
 	Variable i, n: Entier
 Début
 	Ecrire("Saisir n:")

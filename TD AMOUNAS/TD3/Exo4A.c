@@ -8,7 +8,7 @@ int main(){
 	gets(TXT);
 	
 	/*********************** Traitement ******************************************/
-	N = strlen(TXT);
+	N = strlen(TXT)-1;
 	cpt = 0;
 	for (i = 0; i<N; i++){
 		do{

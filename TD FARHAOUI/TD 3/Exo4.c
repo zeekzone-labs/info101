@@ -2,7 +2,7 @@
 main(){
     int N;
      
-    printf("\ndonner une valeur ");
+    printf("donner une valeur ");
     scanf("%d",&N);
         
     while(N<10||N>20){
