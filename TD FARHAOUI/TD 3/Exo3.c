@@ -1,14 +1,13 @@
 #include<stdio.h>
 main(){
-	int depart, fin;
+	int depart, fin, i;
 
 	printf("Veuillez saisir le nombre de depart: ");
 	scanf("%d", &depart);
 
 	fin = depart + 10;
-	depart++;
-
-	int i; 
+	depart++; // depart = depart + 1;
+ 
 	for(i = depart; i <= fin ; i++) 
 		printf("%d ", i);
 }
@@ -22,9 +21,8 @@ DEBUT
 	fin <-- depart + 10
 	depart <-- depart + 1
 
-	Pour i de depart a fin Faire
+	Pour i <-- depart a fin pas=1 Faire
 		Ecrire(i, " ")
-	FinPour
-		
+	FinPour	
 FIN
 */

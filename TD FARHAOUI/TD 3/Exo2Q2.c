@@ -9,6 +9,7 @@ main(){
 	F = 1;
 	for(i = 1; i<=n ; i++)
 		F *= i;
+		
 	// Affichage (Sortie)
 	printf("La factoriel est: %d", F);
 }
@@ -18,6 +19,7 @@ Algorithme Factoriel
 Début
 	Ecrire("Saisir n:")
 	Lire(n)
+	
 	F <-- 1
 	POUR i <-- 1 à n FAIRE
 		F <-- F * i
@@ -26,4 +28,8 @@ Début
 Fin
 */
 
-
+i     test                   action       MAJ
+1      i <= n   si vrai     F = F * i      i++
+2      i <= n   si vrai     F = F * i      i++
+3
+4

@@ -11,5 +11,12 @@ main(){
 	printf("e) &T[7]-P = %d\n", &T[7]-P);
 	printf("f) P+(*P-10) = %d\n", P+(*P-10));
 	printf("g) *(P+*(P+8)-T[7]) = %d\n", *(P+*(P+8)-T[7]));
+	
+	if(&T[0] > P)
+		printf("positif");
+	else if (&T[0] < P)
+			printf("negatif");
+	else 
+			printf("ZERO");
 
 }

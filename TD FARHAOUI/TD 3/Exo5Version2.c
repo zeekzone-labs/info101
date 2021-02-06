@@ -14,8 +14,8 @@ main(){
 		scanf("%d", &nombre);
 		if(nombre > max){
 			max = nombre;
-			numero = 1;
-		}
+			numero = i;
+		}n
 	}
 	printf("Le plus grand de ces nombres est : %d.\n", max);
 	printf("C'etait le nombre numero : %d.", numero);
