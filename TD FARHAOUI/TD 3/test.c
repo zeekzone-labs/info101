@@ -1,8 +1,13 @@
 #include<stdio.h>
 main(){
-	int i, b;
-	printf("i=%d   b=%d", i, b);
-	
+	int i, b, a, j;
+	a = 2;
+	b = 5; 
+	printf("a=%d   b=%d\n", a, b);
+	i = a + b++; // i = a + b;   b = b +1;
+	printf("a=%d   b=%d  i=%d\n", a, b, i);
+	j = a + ++b; // b = b +1;   j = a + b;   
+	printf("a=%d   b=%d  j=%d\n", a, b, j);
 }
 /*
 Algorithme affichageDixFois_Avec_POUR

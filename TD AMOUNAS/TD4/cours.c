@@ -13,7 +13,10 @@ main(){
 	
 	printf("Le contenu de p a=%d\n", *p);	
 	printf("La valeur de p=%x\n", p);	
-	printf("L'adresse de p &p=%x", &p);	
+	printf("L'adresse de p &p=%x\n", &p);	
+	
+	char c = 'A';
+	printf("A = %d", c);
 }
 
 

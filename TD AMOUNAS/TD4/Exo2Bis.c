@@ -21,9 +21,14 @@ int main(){
 	puts(ch);
 	
 	printf("La chaine \"%s\" contient:\n",ch);
+	int i;
 	for(pch=ch; *pch; pch++)
-		if((*pch<='z') && (*pch>='a'))
-	   		printf("%d fois la lettre \'%c\'\n",*(abc+(*pch-'a')),'A'+(*pch-'a'));
-	   	else
-	   		printf("%d fois la lettre \'%c\'\n",*(abc+(*pch-'A')),'A'+(*pch-'A'));
+		if((*pch<='z') && (*pch>='a')){ // islower(*pch)
+			i =  (*pch-'a');
+			printf("%d fois la lettre '%c'\n",*(abc+i),'A'+i);
+		}	
+	   	else{
+	   		i =  (*pch-'A');
+			printf("%d fois la lettre '%c'\n",*(abc+i),'A'+i);
+		   }
 }
