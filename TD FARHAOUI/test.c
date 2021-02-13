@@ -1,4 +1,9 @@
 #include<stdio.h>
+#include<limits.h>
+
+#define MAX 100
+#define _CHAR_MAX 127
+
 main(){
 	int ligne, colonne, n;
 	
@@ -13,6 +18,10 @@ main(){
 		} 
 		printf("\n");
 	}
+	
+	printf("%d     %d", SCHAR_MAX, _CHAR_MAX);
+	
+	
 	
 	
 }

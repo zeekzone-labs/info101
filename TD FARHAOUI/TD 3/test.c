@@ -9,6 +9,8 @@ main(){
 	j = a + ++b; // b = b +1;   j = a + b;   
 	printf("a=%d   b=%d  j=%d\n", a, b, j);
 }
+
+
 /*
 Algorithme affichageDixFois_Avec_POUR
 	Variable i: Entier
