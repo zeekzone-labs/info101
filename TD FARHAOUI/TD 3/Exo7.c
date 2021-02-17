@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int main(){
+main(){
 	int n, nbrDiviseur = 0;
 
 	printf("Veuillez saisir le nombre N:\n");
