@@ -1,11 +1,12 @@
 #include<stdio.h>
+#include<limits.h>
 main(){
-	int nombre, total, somme, min, min_pos, somme_pos, i; 
+	int nombre, total, somme, min, min_pos, somme_pos; 
 	
-	total = somme = somme_pos = i = 0;
-	min = min_pos = 999999; // un  nombre trop grand
+	total = somme = somme_pos = 0;
+	min = min_pos = INT_MAX; // un  nombre trop grand
 	do{
-		printf("Entrer le nombre numero %d: ", i);
+		printf("Entrer le nombre numero : ");
 		scanf("%d", &nombre);
 		
 		if(nombre != 999){
@@ -17,7 +18,6 @@ main(){
 				min_pos = (min_pos<nombre) ? min_pos : nombre;
 			}
 		}
-		i++;
 	}while(nombre != 999);
 	
 	printf("Le nombre totale d'entrees est : %d.\n", total);

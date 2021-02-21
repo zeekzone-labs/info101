@@ -25,25 +25,3 @@ main(){
     	printf("Ooops! Vous avez nombre d'essaies permise (10)");
 }
 
-/*
-Algorithme Devinette
-   Variables  count, a: Entier
-   Constant n = 14
-Debut
-
-    count <-- 0
-    Repeter 
-        ecrire("donner une valeur : ")
-        lire(a)
-        
-        if(a < n)
-        	printf("Plus grand !\n")
-        else if(a > n)
-        	printf("Plus petit !\n")
-        	
-        count <-- count + 1	
-    Jusqu'a (n == a)
-    
-    ecrire("fin Programme! Felicitations. Vous avez la bonne reponse apres ", count, " essaies");
-Fin
-*/
