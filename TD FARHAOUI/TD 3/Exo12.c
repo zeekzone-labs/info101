@@ -2,7 +2,8 @@
 main(){
     int T, j, i;
     printf("Saisir la taille: \n");
-    scanf("%d",&T); 
+    scanf("%d",&T); // T == n
+    
     for(i = 1; i <= T ; i++){
     	for(j = 1; j <= T; j++){
     		if(i == 1 || i== T || j == 1 || j== T)
