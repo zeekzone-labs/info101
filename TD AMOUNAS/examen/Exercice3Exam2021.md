@@ -1,3 +1,4 @@
+[Regarder sur YouTube](https://www.youtube.com/watch?v=kJqa34WOrg8)
 ```c
 #include<stdio.h>
 #include<string.h>
